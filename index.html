@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Pexe</title>
+    <link rel="icon" href="assets/pexe.png">
+    <script src="src/utils.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="homeScreen">
+        <div>
+            <h1 id="tittle">PEXE</h1>
+            <img id="pexe" src="assets/pexe.svg">
+        </div>
+        <button autofocus onclick="play()">JOGAR</button>
+    </div>
+    <canvas style="display:none" id="canvas"></canvas>
+    <div style="display: none;" id="gameOverScreen">
+        <div id="gameOverContent">
+            <h3>Pexe morreu</h3>
+            <img id="pexe-morto" src="assets/pexe-morto.svg">
+            <br>
+            <button autofocus id="play-again" onclick="play()">Jogar dnv</button>
+        </div>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+</html>

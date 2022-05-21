@@ -1,0 +1,86 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+}
+#tittle {
+    font-size: 100px;
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+button {
+    padding: 15px;
+    font-size: 25pt;
+    background-color: #F0CF58;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    transition: all 200ms;
+}
+button:hover {
+    background-color: hsl(47, 84%, 55%);
+    transform: scale(1.1);
+}
+canvas {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+#gameOverScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: popupbg 300ms;
+}
+#gameOverContent {
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 25vh;
+    background-color: tomato;
+    border-radius: 15px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    animation: popup 300ms;
+}
+#pexe {
+    margin-bottom: 25px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes popupbg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
