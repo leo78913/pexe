@@ -41,8 +41,6 @@ function play() {
     document.getElementById('gameOverScreen').style.display = 'none'
     if (mobileCheck()) {
         document.body.requestFullscreen()
-        canvas.style.width = "100%"
-        canvas.style.height = "100%"
         screen.orientation.lock("landscape")
     }
     player = new Player()
