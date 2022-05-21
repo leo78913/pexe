@@ -1,4 +1,3 @@
-
 // pega o canvas e cria o contexto 2d pra desenhar ele
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d')
@@ -42,6 +41,9 @@ function play() {
     document.getElementById('gameOverScreen').style.display = 'none'
     if (mobileCheck()) {
         document.body.requestFullscreen()
+        canvas.style.width = "100%"
+        canvas.style.height = "100%"
+        screen.orientation.lock("landscape")
     }
     player = new Player()
     paused = false
@@ -90,7 +92,7 @@ function update() {
     render()
 }
 function render() {
-        ctx.fillStyle = "#3f8adb"
+        ctx.fillStyle = "skyblue"
         ctx.fillRect(0,0,canvas.width,canvas.height)
         for (let i = 0; i < enemys.length; i++) {
             enemys[i].render()
