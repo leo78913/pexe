@@ -35,7 +35,7 @@ enemySprite.src = 'assets/pexe2.png'
 let player
 let enemys
 let updateInterval
-window.addEvent)
+
 function play() {
     canvas.style.display = 'block'
     document.getElementById('homeScreen').style.display = "none"
