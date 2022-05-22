@@ -140,7 +140,7 @@ const gameOverMsgs = [
     "Pexe morreu", "Que pro", "skill issue", "1984","KKKKKKKKKKKKKKKKK",
     "Pexe morreu afogado","Se Fudeu otário", "get gud nub", "lembrar de colocar mensagem criativa aqui depois",
     "Pexe não quer viver no mesmo mundo que você", "Pexe foi cancelado no Twitter",
-    "Jesser cade a cocainer", "Rest In Piss", "Descanse Em Mijo", "F",
+    "Jesser cade a cocainer", "Rest In Piss", "Descanse Em Mijo", "F", "📻",
 ]
 function gameOver() {
     player.img = document.getElementById("pexe-morto")
