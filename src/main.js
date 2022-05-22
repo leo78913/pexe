@@ -136,10 +136,22 @@ window.addEventListener('pointerup', function (e) {
     keyDown = false
     paused = false
 })
-
+const gameOverMsgs = [
+    "Pexe morreu", "Que pro", "skill issue", "1984","KKKKKKKKKKKKKKKKK",
+    "Pexe morreu afogado","Se Fudeu otário", "get gud nub", "lembrar de colocar mensagem criativa aqui depois",
+    "Pexe não quer viver no mesmo mundo que você", "Pexe foi cancelado no Twitter",
+    "Jesser cade a cocainer", "Rest In Piss", "Descanse Em Mijo", "F",
+]
 function gameOver() {
     player.img = document.getElementById("pexe-morto")
+
     render()
+    document.getElementById("gameOverMsg").innerHTML = gameOverMsgs[random(0,gameOverMsgs.length)]
+
+    if (Math.random()<0.05) {
+        document.getElementById("gameOverMsg").innerHTML = '<style>@keyframes rgb { from {filter:hue-rotate(0deg)} to {filter:hue-rotate(360deg)}}</style><a style="animation:rgb .5s linear infinite;color=red;text-shadow:0px 0px 5px red" id="bobux-generator" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Clique aqui para Bobux gratis (real)</a>'
+    }
+
     clearInterval(updateInterval)
     if (hScore < score) {
         hScore = score
